@@ -1,0 +1,78 @@
+.card {
+  background: hsl(0 0% 100%);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 2px 0 hsl((220 13% 13%)/ 0.05);
+  border: 1px solid hsl(220 13% 91%);
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px hsl((220 13% 13%) / 0.1);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  font-size: 1.875rem;
+}
+
+.name {
+  font-weight: 600;
+  color: hsl(220 13% 13%);
+  margin: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: hsl(220 9% 46%);
+  margin: 0;
+}
+
+.location svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.followButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid;
+}
+
+.followButtonFollowed {
+  background: hsl(199 89% 48%);
+  color: hsl(0 0% 100%);
+  border-color: hsl(199 89% 48%);
+}
+
+.followButtonFollowed:hover {
+  background: hsl((199 89% 48%) / 0.9);
+}
+
+.followButtonNotFollowed {
+  background: transparent;
+  color: hsl(199 89% 48%);
+  border-color: hsl(199 89% 48%);
+}
+
+.followButtonNotFollowed:hover {
+  background: hsl(199 89% 48% / 0.1);
+}
+
