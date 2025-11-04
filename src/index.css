@@ -1,9 +1,16 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+:root {
+  font-family: "Inter", "Manrope", "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  @apply font-sans;
+}
 
+/* 
 @layer base {
   :root {
     --background: 0 0% 98%;
@@ -114,4 +121,4 @@
   body {
     @apply bg-background text-foreground;
   }
-} */
+} */ 
